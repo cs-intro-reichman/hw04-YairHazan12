@@ -29,7 +29,7 @@ public class StringOps {
         String S = "";
         for (int i = 0; i < string.length(); i++) {
             if ("AEIOUaeiou".indexOf(string.charAt(i)) != -1) { //is the char a low case vowl
-                S += (char)(string.charAt(i) - 32);
+                S += uppercase(string.charAt(i));
             }else if (string.charAt(i) <= 90 && string.charAt(i) >= 65) {
                 S += (char)(string.charAt(i) + 32);
             }else{

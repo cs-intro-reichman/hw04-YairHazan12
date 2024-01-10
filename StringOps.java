@@ -28,7 +28,7 @@ public class StringOps {
     public static String capVowelsLowRest (String string) {
         String S = "";
         for (int i = 0; i < string.length(); i++) {
-            if ("aeiou".indexOf(string.charAt(i)) != -1) { //is the char a low case vowl
+            if ("AEIOUaeiou".indexOf(string.charAt(i)) != -1) { //is the char a low case vowl
                 S += (char)(string.charAt(i) - 32);
             }else if (string.charAt(i) <= 90 && string.charAt(i) >= 65) {
                 S += (char)(string.charAt(i) + 32);
